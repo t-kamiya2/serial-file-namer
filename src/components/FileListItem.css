@@ -1,0 +1,132 @@
+.file-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.file-list-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e0;
+}
+
+.file-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-name-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.original-name,
+.current-name,
+.preview-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.label {
+  font-weight: 600;
+  color: #718096;
+  font-size: 0.85rem;
+  min-width: 70px;
+}
+
+.name {
+  color: #4a5568;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+}
+
+.name.preview {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.edit-input {
+  padding: 4px 8px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+  background: white;
+}
+
+.edit-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+}
+
+.file-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.file-size {
+  color: #a0aec0;
+  font-size: 0.8rem;
+}
+
+.file-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: 20px;
+}
+
+.edit-button,
+.delete-button,
+.save-button,
+.cancel-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+.edit-button:hover {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.delete-button:hover {
+  background: rgba(252, 129, 129, 0.1);
+}
+
+.save-button {
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+  color: white;
+  font-weight: bold;
+}
+
+.save-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
+}
+
+.cancel-button {
+  background: linear-gradient(135deg, #fc8181 0%, #f56565 100%);
+  color: white;
+  font-weight: bold;
+}
+
+.cancel-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(252, 129, 129, 0.3);
+}
